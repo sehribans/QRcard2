@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartvizit</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <style>
+        :root{
+        --primary-color: #004AAD;
+        --secondary-color:#000000f7;
+        --text-color:#D9D9D9;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+
+        <div class="cards">
+            <div class="card-conteiner">
+
+                <div class="card home-card">
+                    <div class="black-back">
+                        <div class="img-div back-blue">
+                            <div class="img-box"><img src="img/profil.jpg" alt="kapak"></div>
+                        </div>
+                        <div class="text-div color-blue">
+                            <div class="head">
+                                <h3>Hande YILMAZ</h3>
+                                <p>Senior/Web Developer</p>
+                            </div>
+                            <div class="line"></div>
+
+                        </div>
+                        <span class="color-blue rotate">Buraya Tıklayınız</span>
+                    </div>
+                </div>
+                <div class="card back-card">
+
+                    <div class="black-back">
+                        <div class="navbar">
+                            <button class="rotate"><i class="fa-solid fa-rotate-left"></i></button>
+                            <button class="menu-button" onclick="navbarOpen()"><i class="fa-solid fa-bars"></i></button>
+                            <div class="navigators">
+                                <div class="navbar-buttons">
+                                    <button onclick="about()"><i class="fa-solid fa-square-info"></i></button>
+                                    <button onclick="social()"><i class="fa-solid fa-square-share-nodes"></i></button>
+                                    <button onclick="company()"><i class="fa-sharp fa-solid fa-buildings"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-conteiner">
+                            <div class="profile-frame">
+                                <div class="img-box"><img src="img/kapak.jpg" alt="profil"></div>
+                            </div>
+
+                            <div class="head color-white">
+                                <h4>Hi,<span class="color-blue"> I'm</span></h4>
+                                <h2> Hande </h2>
+                                <h2>YILMAZ</h2>
+
+                            </div>
+                        </div>
+
+                        <div class="contact-icons">
+                            <a href="tel:+123456789"> <i class="fa-sharp fa-solid fa-circle-phone"></i></a>
+                            <a href="mailto:email@ornek.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://wa.me/123456789"><i class="fa-brands fa-whatsapp color-blue"></i></a>
+                        </div>
+                        <div class="contact-text color-white">
+                            
+                            <a href="bussiwap.com">
+                                <h3 class="head">WEB</h3>
+                                <p>examplebussiwap.com</p>
+                            </a>
+                           
+                            <a href="bussiwap.com">
+                                <h3 class="head">EMAIL</h3>
+                                <p>example@bussiwap.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-menu card card-about">
+                <div class="black-back">
+                    <h3 class="head color-white"><i onclick="about()" class="fa-solid fa-square-info"></i></h3>
+                    <div class="link-div">
+                        <a href="#"><i class="fa-solid fa-phone"></i><span>0555 555 55 55</span></a>
+                        <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i><span>Yazır Mah, 9/7
+                                Selçuklu/KONYA</span></a>
+                        <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i><span>sehriban@gmail.com</span></a>
+                        <a href="#"><i class="fa-sharp fa-solid fa-globe"></i></i><span>www.sehriban.com.tr</span></a>
+                        <a href="#"><i class="fa-solid fa-credit-card-front"></i><span>TR20056676767676</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card-menu card card-social">
+                <div class="black-back">
+                    <h3 class="head color-white"><i  onclick="social()" class="fa-solid fa-square-share-nodes"></i></h3>
+                    <div class="link-div">
+                        <a href="https://tr.linkedin.com/"><i
+                                class="fa-brands fa-linkedin"></i><span>https://tr.linkedin.com/</span></a>
+                        <a href="https://www.instagram.com/p/CnvQCB0qyL2/"><i class="fa-brands fa-instagram"></i><span>0850
+                                532
+                                0413</span></a>
+                        <a href="https://tr-tr.facebook.com/"><i
+                                class="fa-brands fa-facebook"></i><span>faceboook</span></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i><span>twitter</span></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+                        <a href="https://discord.com/"><i class="fa-brands fa-discord"></i><span>Discord</span></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i><span>You Tube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-menu card card-company">
+                <div class="black-back">
+                    <h3 class="head color-white"><i  onclick="company()" class="fa-sharp fa-solid fa-buildings"></i></h3>
+                    <div class="link-div">
+                        <a href="#"><i class="fa-solid fa-building"></i><span>Busiwapp Dijital Medya & Yazılım</span></a>
+                        <a href="tel:+90850 532 0413"><i class="fa-solid fa-phone"></i><span>0850 532 0413</span></a>
+                        <a href="https://maps.google.com/?q=Ferhuniye, Darüsşifa Sk. Osiba Iş Merkezi D:9/103, 42100 Selçuklu/Konya"><i class="fa-sharp fa-solid fa-location-dot"></i><span>Fahruniye, Osibahan İş Merkezi 9/103 Selçuklu/KONYA</span></a>
+                        <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i><span>busiwapp@gmail.com</span></a>
+                        <a href="#"><i class="fa-sharp fa-solid fa-globe"></i></i><span>www.busiwapp.com.tr</span></a>
+                        <a href="#"><i class="fa-solid fa-credit-card-front"></i><span>TR20056676767676</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+    </div>
+
+
+    </div>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script>
+    function navbarOpen() {
+        $('.navigators').toggle("scaled")
+    }
+    function about() {
+        $('.card-about').toggle({ effect: "scale", direction: "horizontal" });
+        $('.card-social').hide();
+        $('.card-company').hide()
+    }
+    function social() {
+        $('.card-social').toggle({ effect: "scale", direction: "horizontal" });
+        $('.card-about').hide();
+        $('.card-company').hide()
+    }
+    function company() {
+        $('.card-company').toggle({ effect: "scale", direction: "horizontal" });
+        $('.card-social').hide();
+        $('.card-about').hide()
+    }
+    $(document).ready(function () {
+        $(".rotate").click(function () {
+            $(".card-conteiner").toggleClass("image-fade");
+        });
+    });
+    function rotate() {
+        $(".card-conteiner").removeClass("image-fade")
+    }
+    
+
+
+</script>
